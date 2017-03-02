@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #div1
+        {
+            background-color: white;
+        }
+        #result {
+            font-style: italic;
+            width: 50px;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="lab2.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <p>
+            <b>
+                Sample text 1
+            </b>
+        </p>
+        <p>
+            Sample text 2
+        </p>
+        <p>
+            Sample text 3
+        </p>
+    </div>
+    <div class="text">
+        <button onclick="tree(document.documentElement)">Вывод дерева элементов</button>
+    </div>
+    <br />
+    <div id="result"></div>
+</body>
+</html>
