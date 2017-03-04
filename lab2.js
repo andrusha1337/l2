@@ -19,3 +19,9 @@ function tree(el) {
         el = el.nextSibling;
     }
 }
+
+$(document).ready(function () {
+    $("#btn").on("click", function () {
+        tree(document.documentElement);
+    })
+})
