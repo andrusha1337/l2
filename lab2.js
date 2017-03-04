@@ -1,5 +1,5 @@
 function tree(el) {
-    if (el == document.documentElement) $("#result").empty();
+    if (el == document.documentElement) $(".result").empty();
     while (el) {
         if (1 == el.nodeType && el) {
             var i = 0;
@@ -10,10 +10,10 @@ function tree(el) {
             }
             i -= 2;
             for (var j = 0; j < i; j++) {
-                $("#result").append('+');
+                $(".result").append('+');
             }
-            $("#result").append(el.tagName);
-            $("#result").append('\n');
+            $(".result").append(el.tagName);
+            $(".result").append('\n');
         }
         tree(el.firstChild);
         el = el.nextSibling;
